@@ -38,12 +38,12 @@ body{
   /*SHORT HAND NESTA ORDEM , PODENDO TER O COLOR EM PRIMERO*/
  
   background: var(--bg-url) no-repeat top center/ cover;
-
-
+  height: 100vh;
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 0 24px;
 }
@@ -180,4 +180,16 @@ footer {
   padding: 24px 0;
 
   opacity: 0.8;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url : url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
